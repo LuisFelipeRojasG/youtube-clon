@@ -1,0 +1,194 @@
+:root {
+    --gray-color: color: #bfb8b8;
+    --red-color: color:red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem; 
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+    ;
+
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 90%;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    height: 56px;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 16px;
+}
+
+header i {
+    font-size: 2.4rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.header__logo {
+    width: 164px;
+    display: flex;
+    align-self: center;
+}
+
+.fa-bars {
+    color: var(--gray-color);
+}
+
+.fa-youtube {
+    color: var(--red-color);
+}
+
+.header__logo--burgerMenu {
+    padding: 8px;
+}
+
+.header__logo--youtube img{
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.header__search {
+    width: 50vw;
+    place-self: center;
+}
+
+.search__form {
+    display: flex;
+}
+
+.header__search--input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.header__search--lupa {
+    width: 64px;
+    height: 40px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.fa-magnifying-glass {
+    width: 24px;
+    height: 24px;
+}
+
+.header__search--microfono {
+    margin-left: 5px;
+    padding: 8px;
+}
+
+.header__profile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-self: right;
+    align-self: center;
+}
+
+.header__profile--pointmenu {
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+.header__profile--profileImage {
+    width: 120px;
+    height: 40px;
+    margin-top: 9px;
+    border: 2px solid rgb(44, 85, 221);
+    color: rgb(44, 85, 221);
+    font-weight: 700;
+}
+
+.fa-user {
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+aside {
+    background-color: blueviolet;
+    grid-area: sidebar;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
